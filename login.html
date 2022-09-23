@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixia | Register</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <style>
+      .gradient {
+        background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      }
+    </style>
+</head>
+<body class="gradient w-full">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <a class="text-sm font-bold leading-relaxed flex flex-row items-center mr-4 py-2 whitespace-nowrap uppercase text-white"
+              href="./index.html"><img src="./Flixia logo.PNG" width="120" height="30" alt="" class="mr-2"></a>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <section class="relative w-full h-full py-40 min-h-screen">
+            <div class="container mx-auto px-4 h-full">
+              <div class="flex content-center items-center justify-center h-full">
+                <div class="w-full lg:w-4/12 px-4">
+                  <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0 bg-gray-50">
+                    <div class="rounded-t mb-0 px-6 py-6">
+                      <div class="text-center mb-3">
+                        <h6 class="text-blueGray-500 text-sm font-bold">
+                          Login
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+                      <form action="../../handlers/admin_handler.php" method="post" >
+                        <div class="relative w-full mb-3">
+                          <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" for="grid-password">Email</label><input type="email" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Email" name="email" />
+                        </div>
+                        <div class="relative w-full mb-3">
+                          <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" for="grid-password">Password</label><input type="password" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Password" name="password"/>
+                        </div>
+                        <div class="text-center mt-6">
+                          <button class="gradient text-white active:bg-blue-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150" type="submit" name="login">
+                            Login
+                          </button>
+                        </div>
+                      </form>
+                      <div class="flex flex-wrap mt-6">
+                        <div class="w-1/2">
+                          <a href="./register.html" class="text-blueGray-500"><small>Not a user? Register</small></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="bg-white">
+        <div class="container mx-auto px-8">
+          <div class="w-full flex flex-col md:flex-row py-6">
+            <div class="flex-1 mb-6 text-black">
+              <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                <img src="./Flixia logo.PNG" width="120px" alt="">
+              </a>
+            </div>
+            <div class="flex-1">
+              <p class="uppercase text-gray-500 md:mb-6">Links</p>
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <p class="uppercase text-gray-500 md:mb-6">Social</p>
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <p class="uppercase text-gray-500 md:mb-6">Company</p>
+              <ul class="list-reset mb-6">
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
+                </li>
+                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
