@@ -17,13 +17,25 @@
     .gradient {
       background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     }
+    .bg-pic{
+      background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(https://images.hdqwalls.com/download/interstellar-movie-wide-2560x1440.jpg);font-family: 'Source Sans Pro', sans-serif;
+      background-size: 100vw 100vh;
+    }
+    .background{
+      background: #0c1115;
+    }
+    @media (min-width: 768px) {
+      .bg-pic{
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(https://images.hdqwalls.com/download/interstellar-movie-wide-2560x1440.jpg);font-family: 'Source Sans Pro', sans-serif;
+        background-size: 100vw 100vh;
+      }
+    }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white"
-  style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(https://images.hdqwalls.com/download/interstellar-movie-wide-2560x1440.jpg);font-family: 'Source Sans Pro', sans-serif;background-size: contain;">
+<body class="leading-normal tracking-normal text-white background w-screen h-screen overflow-x-hidden">
   <!--Nav-->
-  <nav id="header" class="fixed bg-white w-full z-30 top-0 text-white">
+  <nav id="header" class="fixed bg-white w-full z-30 top-0 text-white overflow-hidden">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
@@ -32,7 +44,7 @@
       </div>
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
-          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 ">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -64,10 +76,9 @@
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   <!--Hero-->
-  <div class="pt-24">
+  <div class="pt-24 w-full bg-pic h-screen">
     <div class="container px-3 mx-auto h-screen flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-center text-center md:text-left"
         data-aos="zoom-inx-down" data-aos-duration="2000" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <h1 class="my-4 text-5xl font-bold leading-tight">
           Unlimited movies, TV shows, and more.
@@ -80,10 +91,6 @@
           Subscribe
         </button>
       </div>
-      <!--Right Col-->
-      <!-- <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="./Resting _Monochromatic.svg" />
-        </div> -->
     </div>
   </div>
   <div class="relative -mt-12 lg:-mt-24" id="about">
@@ -111,13 +118,7 @@
   </div>
   <section class="bg-white border-b py-8 gradient">
     <div class="container max-w-5xl mx-auto m-8">
-      <!-- <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Title
-        </h2> -->
-      <!-- <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div> -->
-      <div class="flex flex-wrap" data-aos="fade-left" data-aos-duration="2000">
+      <div class="flex flex-wrap" data-aos="zoom-in" data-aos-duration="3000">
         <div class="w-5/6 sm:w-1/2 p-6  flex flex-col justify-center">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
             Download your shows to watch offline.
@@ -132,7 +133,7 @@
           <img src="./undraw_download_re_li50.svg" alt="">
         </div>
       </div>
-      <div class="flex flex-wrap flex-col-reverse sm:flex-row" data-aos="fade-right" data-aos-duration="2000">
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row" data-aos="zoom-in" data-aos-duration="3000">
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <svg class="w-5/6 sm:h-64 mx-auto" viewBox="0 0 1176.60617 873.97852" xmlns="http://www.w3.org/2000/svg">
             <title>connected world</title>
@@ -330,9 +331,9 @@
             </div>
             <ul class="w-full text-center text-sm">
               <li class="border-b py-4">&#10004; - Watch on your TV, laptop, phone, or tablet</li>
-              <li class="border-b py-4">&#10006; - Up to 6 user profilesUp to 6 user profiles</li>
-              <li class="border-b py-4">&#10006; - Watch on 2 different screens at the same time</li>
-              <li class="border-b py-4">&#10006; - Download and watch</li>
+              <li class="border-b py-4">&#10007; - Up to 6 user profilesUp to 6 user profiles</li>
+              <li class="border-b py-4">&#10007; - Watch on 2 different screens at the same time</li>
+              <li class="border-b py-4">&#10007; - Download and watch</li>
             </ul>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
@@ -354,8 +355,8 @@
             <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
             <ul class="w-full text-center text-base font-bold">
               <li class="border-b py-4">&#10004; - Watch on your TV, laptop, phone, or tablet</li>
-              <li class="border-b py-4">&#10006; - Up to 6 user profilesUp to 6 user profiles</li>
-              <li class="border-b py-4">&#10006; - Watch on 2 different screens at the same time</li>
+              <li class="border-b py-4">&#10007; - Up to 6 user profilesUp to 6 user profiles</li>
+              <li class="border-b py-4">&#10007; - Watch on 2 different screens at the same time</li>
               <li class="border-b py-4">&#10004; - Download and watch</li>
             </ul>
           </div>
@@ -511,41 +512,41 @@
     AOS.init();
   </script>
   <script>
-    /*Toggle dropdown list*/
-    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-    var navMenuDiv = document.getElementById("nav-content");
-    var navMenu = document.getElementById("nav-toggle");
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
 
-    document.onclick = check;
-    function check(e) {
-      var target = (e && e.target) || (event && event.srcElement);
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
 
-      //Nav Menu
-      if (!checkParent(target, navMenuDiv)) {
-        // click NOT on the menu
-        if (checkParent(target, navMenu)) {
-          // click on the link
-          if (navMenuDiv.classList.contains("hidden")) {
-            navMenuDiv.classList.remove("hidden");
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
           } else {
+            // click both outside link and outside menu, hide menu
             navMenuDiv.classList.add("hidden");
           }
-        } else {
-          // click both outside link and outside menu, hide menu
-          navMenuDiv.classList.add("hidden");
         }
       }
-    }
-    function checkParent(t, elm) {
-      while (t.parentNode) {
-        if (t == elm) {
-          return true;
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
         }
-        t = t.parentNode;
+        return false;
       }
-      return false;
-    }
   </script>
 </body>
 
